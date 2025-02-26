@@ -1,0 +1,13 @@
+<section class="events-section">
+  <h2>Eventos y Talleres</h2>
+  <p>
+    ¡Participa en nuestras próximas actividades y aprende más sobre ecología y sostenibilidad!
+  </p>
+  <div class="event-list">
+    <div class="event-item" *ngFor="let event of events">
+      <h3>{{ event.title }}</h3>
+      <p><strong>Fecha:</strong> {{ event.date | date:'longDate' }}</p>
+      <p>{{ event.description }}</p>
+    </div>
+  </div>
+</section>
