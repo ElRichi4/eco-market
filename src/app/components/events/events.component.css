@@ -1,0 +1,37 @@
+.events-section {
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.events-section h2 {
+  color: #3BB143;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  border-left: 5px solid #3BB143;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.event-item h3 {
+  margin-top: 0;
+  color: #8B4513;
+}
+
+.event-item p {
+  margin: 5px 0;
+}
+
+.event-item p strong {
+  color: #3BB143;
+}
