@@ -1,0 +1,35 @@
+<section class="profile-section">
+  <h2>Perfil de Usuario</h2>
+  <div class="user-info">
+    <p><strong>Nombre:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+  </div>
+
+  <h2>Carrito de Compras</h2>
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Precio Total</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cartItems; let i = index">
+        <td>{{ item.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price || 'N/A' | currency:'EUR' }}</td>
+        <td>{{ (item.price || 0) * (item.quantity || 1) | currency:'EUR' }}</td>
+        <td>
+          <button (click)="removeItem(i)" class="remove-button">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="total"><strong>Total:</strong> {{ totalPrice | currency:'EUR' }}</p>
+  <div class="checkout-container">
+    <button class="checkout-button">Proceder al Pago</button>
+  </div>
+</section>
