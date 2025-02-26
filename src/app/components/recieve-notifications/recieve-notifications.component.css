@@ -1,0 +1,68 @@
+.receive-notifications-section {
+    padding: 20px;
+    margin-top: 120px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .receive-notifications-section h2 {
+    color: #3BB143; 
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .receive-notifications-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus {
+    border-color: #3BB143;
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 177, 67, 0.5);
+  }
+  
+  .form-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #3BB143;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2e8b57;
+  }
+  
