@@ -1,0 +1,11 @@
+<section class="news-section">
+  <h2>Últimas Noticias</h2>
+  <div *ngFor="let article of newsArticles" class="news-article">
+    <img [src]="article.urlToImage" alt="{{ article.title }}" class="news-image">
+    <div class="news-content">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.description }}</p>
+      <a [href]="article.url" target="_blank">Leer más</a>
+    </div>
+  </div>
+</section>
