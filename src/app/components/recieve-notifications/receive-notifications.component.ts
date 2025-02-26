@@ -13,7 +13,6 @@ export class ReceiveNotificationsComponent {
   constructor() {}
 
   onSubmit(): void {
-    // Lógica para manejar la suscripción
     console.log('Formulario enviado');
   }
 }
