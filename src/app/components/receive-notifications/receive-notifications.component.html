@@ -1,0 +1,20 @@
+<section class="receive-notifications-section">
+  <h2>Recibir Avisos</h2>
+  <form class="receive-notifications-form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="offers" name="offers">
+        Quiero recibir ofertas especiales y promociones.
+      </label>
+    </div>
+    <button type="submit" class="submit-button">Suscribirse</button>
+  </form>
+</section>

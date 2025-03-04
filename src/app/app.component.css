@@ -1,0 +1,30 @@
+.product-section,
+.news-section,
+.receive-notifications-section {
+  padding-top: 180px;
+}
+
+h2 {
+  color: #3BB143; 
+  margin-top: 20px; 
+}
+
+.header-spacer {
+  height: 100px; 
+}
+
+.main-content {
+  margin-top: 100px; 
+}
+
+footer {
+  background-color: #3BB143;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}

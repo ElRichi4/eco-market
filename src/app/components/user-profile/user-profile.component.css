@@ -1,18 +1,23 @@
 .profile-section {
   padding: 20px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 150px; /* Asegurar margen inferior para que no quede cubierto por el footer */
+  background-color: #f5f5f5; /* Fondo ligero para toda la sección */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-section h2 {
   color: #3BB143;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .user-info {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -20,45 +25,98 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cart-table th,
 .cart-table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px 15px;
   text-align: center;
 }
 
 .cart-table th {
-  background-color: #f2f2f2;
+  background-color: #3BB143;
+  color: white;
 }
 
 .remove-button {
   background-color: #ff4d4d;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 12px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .remove-button:hover {
   background-color: #e60000;
-  cursor: pointer;
 }
 
 .total {
   text-align: right;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .checkout-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .checkout-button {
+  background-color: #3BB143;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #2e8b57;
+}
+
+.payment-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.payment-form h3 {
+  margin-top: 0;
+  color: #3BB143;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3BB143;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.pay-button {
   background-color: #3BB143;
   color: white;
   border: none;
@@ -66,8 +124,11 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
 }
 
-.checkout-button:hover {
+.pay-button:hover {
   background-color: #2e8b57;
 }

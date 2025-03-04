@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CartService } from '../../services/cart.service';
+import { FormsModule } from '@angular/forms';
+import { CartService } from '../../services/cart.service'; // Importar el servicio
 
 interface Product {
   name: string;
@@ -17,7 +18,7 @@ interface User {
 @Component({
   selector: 'app-user-profile',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './user-profile.component.html',
   styleUrls: ['./user-profile.component.css'],
 })
@@ -28,6 +29,10 @@ export class UserProfileComponent {
   };
 
   cartItems: Product[] = [];
+  isPaymentFormVisible = false;
+  cardNumber = '';
+  expiryDate = '';
+  cvv = '';
 
   constructor(private cartService: CartService) {}
 
@@ -36,10 +41,22 @@ export class UserProfileComponent {
   }
 
   get totalPrice(): number {
-    return this.cartItems.reduce((total, item) => total + (item.price ?? 0) * (item.quantity ?? 1), 0);
+    return this.cartItems.reduce((total, item) => total + (item.price || 0) * (item.quantity || 1), 0);
   }
 
   removeItem(index: number) {
     this.cartItems.splice(index, 1);
+  }
+
+  showPaymentForm() {
+    this.isPaymentFormVisible = true;
+  }
+
+  processPayment() {
+    // Lógica para procesar el pago (simulada)
+    alert('Pago procesado con éxito');
+    this.cartService.clearCart();
+    this.cartItems = [];
+    this.isPaymentFormVisible = false;
   }
 }
